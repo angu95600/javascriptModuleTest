@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: #8CC461;
+        ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content:space-evenly; */
+
+    }
+
+    .rock1 {
+        display: flex;
+        height: 8rem;
+        width: 4rem;
+        color: white;
+        font-weight: bold;
+        justify-content: center;
+        align-items: center;
+        font-size: xx-large;
+        text-align: left;
+    }
+
+    .cont1 {
+        display: flex;
+        flex-direction: row;
+        /* background-color: ; */
+        height: 10rem;
+        width: 40rem;
+        border-radius: 8px;
+        justify-content: space-around;
+        align-items: center;
+        border: 2px solid white;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+
+    }
+
+
+    .cs {
+        width: 7rem;
+        font-size: larger;
+        text-align: center;
+    }
+
+    .sc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 4rem;
+        width: 4rem;
+        font-size: 50px;
+        font-weight: bold;
+        /* margin-top: 0.rem; */
+    }
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 7rem;
+        background-color: white;
+        border-radius: 0.4rem;
+    }
+
+    .cont2 {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+        height: 30rem;
+        width: 70rem;
+        /* background-color: rgb(224, 16, 16); */
+    }
+
+    .item1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 19rem;
+        width: 19rem;
+        background-color: white;
+        border-radius: 10rem;
+        background-color: #81cf46;
+        /* margin-left: 24rem; */
+    }
+
+    .sub1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 16rem;
+        width: 16rem;
+        background-color: white;
+        border-radius: 10rem;
+        background-color: #62bb1e;
+    }
+
+    .sub2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 13rem;
+        width: 13rem;
+        background-color: white;
+        border-radius: 10rem;
+        background-color: #418d08;
+    }
+
+    .item2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 10rem;
+        width: 10rem;
+        border-radius: 5rem;
+        background-color: purple;
+        /* margin-left: 24rem; */
+    }
+
+    .item3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 10rem;
+        width: 20rem;
+        /* color: white; */
+        /* background-color: white; */
+        /* margin-left: 24rem; */
+    }
+
+    .c {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10rem;
+        width: 10rem;
+        border-radius: 6rem;
+        background-color: blue;
+    }
+
+    .rock {
+        display: flex;
+        height: 8rem;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        width: 8rem;
+        border-radius: 10rem;
+        background-image: url('icons8-fist-67\ 1.png');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .rock:hover {
+        cursor: pointer;
+    }
+
+    .scissors {
+        display: flex;
+        height: 8rem;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        width: 8rem;
+        border-radius: 10rem;
+        background-image: url('17911 1.png');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .scissors:hover {
+        cursor: pointer;
+    }
+
+    .sub3 {
+        font-size: xx-large;
+        color: white;
+        font-weight: bolder;
+    }
+
+    .pa {
+        height: 3rem;
+        width: 10rem;
+        border-radius: 1rem;
+        background-color: #75c435;
+        color: white;
+        font-size: large;
+        border: 3px solid;
+    }
+
+    .ag {
+        font-size: x-large;
+        color: white;
+        font-weight: bold;
+    }
+    .rules{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5rem;
+        width: 100vw;
+        /* background-color: aqua; */
+    }
+    .rul{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        color: white;
+       font-weight: bolder;
+       font-size: large;
+       border-radius: 6px;
+       border: 2px solid;
+        height: 2rem;
+        width: 6rem;
+        margin-left: 75rem;
+        margin-right: 1rem;
+        background-color: #8CC461;
+
+    }
+    .rul:hover{
+        cursor: pointer;
+    }
+     .next{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        color: white;
+       font-weight: bolder;
+       font-size: large;
+       border-radius: 6px;
+       border: 2px solid;
+        height: 2rem;
+        width: 6rem;
+        /* margin-left: 80rem; */
+        background-color: #8CC461;
+
+    }
+    .rul:hover{
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div class="cont1">
+        <div class="rock1">ROCK PAPER SCISSORS</div>
+        <div class="item">
+            <div class="cs">COMPUTER SCORE</div>
+            <div class="sc"id="computer_score">0</div>
+        </div>
+        <div class="item">
+            <div class="cs">YOUR SCORE</div>
+            <div class="sc"id="your_score">0</div>
+        </div>
+    </div>
+    <div class="cont2">
+        <div class="item1">
+            <div class="sub1">
+                <div class="sub2">
+                    <div class="c" id="c1">
+                        <button class="rock"></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="item3">
+            <div class="sub3">You Loose</div>
+            <div class="ag">Against PC</div>
+            <button class="pa" onclick="location.href='index.html'">PLay Again</button>
+        </div>
+        <div class="item2">
+
+            <button class="scissors"></button>
+
+
+        </div>
+    </div>
+<div class="rules">
+    <button class="rul">RULES</button>
+<button class="next" onclick="location.href=`${dispnxt()}`">NEXT</button>
+</div>
+<script src="script.js"></script>
+
+</body>
+
+</html>
